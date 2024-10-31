@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: rgb(243, 131, 131);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 120px; /* Increased padding for more space */
+  background-color: #e3a6a6;
+  color: #fff;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.nav-left .logo {
+  font-size: 28px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.nav-left a,
+.navbar a {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 20px;
+  position: relative;
+}
+
+.nav-left a:not(.logo)::before,
+.navbar a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+}
+
+.nav-left a:not(.logo):hover::before,
+.navbar a:hover::before {
+  width: 100%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown .dropbtn {
+  font-size: 18px;
+  color: #fff;
+  background-color: transparent;
+  padding: 10px 0;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Contact Section Styling */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px; /* More padding for top and bottom */
+  }
+  
+  .contact-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-section h2 {
+    font-size: 1.8rem; /* Increased font size for prominence */
+    margin: 20px 0; /* Consistent margin above and below */
+    color: #333;
+    text-align: center; /* Centered text for symmetry */
+  }
+  
+  .contact-section p {
+    font-size: 1.1rem;
+    margin: 10px 0; /* Consistent margin above and below */
+    color: #555;
+    text-align: center;
+  }
+  
+  .contact-container {
+    display: flex;
+    gap: 70px; /* Increased gap between info and form */
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 40px; /* Adds space between header and contact container */
+  }
+  
+  /* Contact Info Styling */
+  .contact-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-info p {
+    text-align: center; /* Center align contact info */
+  }
+  
+  /* Contact Form Styling */
+  .contact-form {
+    flex: 1;
+    background-color: #fff;
+    padding: 40px; /* Additional padding inside the form */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1rem;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .contact-form button {
+    margin-top: 10px; /* Adds space above the button */
+    font-size: 1rem;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #555;
+  }
+  
