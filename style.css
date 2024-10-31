@@ -9,7 +9,7 @@ font-family: "Poppins", sans-serif;
 
 body {
   min-height: 100vh;
-  background-image: url("/NavBar/images/header.png");
+  background-image: url("header.png");
   background-size: cover;
   background-position: center;
 }
